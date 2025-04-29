@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talentum - Donde los sueños toman vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #ffffff;
+      color: #0A1F44;
+    }
+    header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #0A1F44;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0A1F44;
+      font-weight: 500;
+    }
+    .login-button {
+      background-color: #F5C518;
+      border: none;
+      padding: 10px 20px;
+      color: #0A1F44;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1515169067865-5387ec356754?fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: #ffffff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero .buttons a {
+      margin: 0 10px;
+      background-color: #0A1F44;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+    section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    .filters select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Lato', sans-serif;
+    }
+    .casting-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 6px;
+      margin: 10px;
+      max-width: 300px;
+      text-align: left;
+    }
+    .casting-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .casting-card h4 {
+      margin-top: 0;
+    }
+    .footer {
+      background-color: #0A1F44;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .footer a {
+      color: #ffffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .filters {
+        flex-direction: column;
+        align-items: center;
+      }
+      .casting-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talentum</h1>
+    <nav>
+      <a href="#">Buscar Castings</a>
+      <a href="#">Crear Perfil</a>
+      <a href="#">Publicar Proyecto</a>
+      <a href="#">Blog</a>
+      <button class="login-button">Iniciar Sesión / Registrarse</button>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Donde los sueños toman vida</h2>
+    <p>Descubre castings. Impulsa tu carrera. Da vida a tu talento.</p>
+    <div class="buttons">
+      <a href="#">Buscar Castings</a>
+      <a href="#">Crear Perfil Actoral</a>
+      <a href="#">Publicar Proyecto</a>
+    </div>
+  </div>
+
+  <section>
+    <h3>¿Qué es Talentum?</h3>
+    <p>La plataforma que conecta a actores y actrices con proyectos reales de cine, televisión, teatro y medios digitales en México y Latinoamérica.</p>
+  </section>
+
+  <section>
+    <h3>Cómo Funciona</h3>
+    <p>1. Crea tu perfil actoral &rarr; 2. Encuentra castings compatibles &rarr; 3. Aplica y haz que tu talento brille.</p>
+  </section>
+
+  <section>
+    <h3>Castings Destacados</h3>
+    <div class="casting-list">
+      <div class="casting-card">
+        <h4>Proyecto A</h4>
+        <p><strong>Tipo:</strong> Cortometraje</p>
+        <p><strong>Ubicación:</strong> CDMX</p>
+        <p><strong>Pago:</strong> Sí</p>
+        <p><strong>Fecha límite:</strong> 15 mayo 2025</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="casting-card">
+        <h4>Proyecto B</h4>
+        <p><strong>Tipo:</strong> Obra de Teatro</p>
+        <p><strong>Ubicación:</strong> Guadalajara</p>
+        <p><strong>Pago:</strong> No</p>
+        <p><strong>Fecha límite:</strong> 20 mayo 2025</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="casting-card">
+        <h4>Proyecto C</h4>
+        <p><strong>Tipo:</strong> Serie de TV</p>
+        <p><strong>Ubicación:</strong> Monterrey</p>
+        <p><strong>Pago:</strong> Sí</p>
+        <p><strong>Fecha límite:</strong> 30 mayo 2025</p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Buscar Castings</h3>
+    <p>Explora proyectos de cine, TV, teatro y más.</p>
+    <div class="filters">
+      <select><option>Categoría</option></select>
+      <select><option>Ubicación</option></select>
+      <select><option>Edad</option></select>
+      <select><option>Género</option></select>
+      <select><option>Modalidad</option></select>
+      <select><option>Pago</option></select>
+    </div>
+    <div class="casting-list">
+      <div class="casting-card">
+        <h4>Corto Universitario</h4>
+        <p><strong>Tipo:</strong> Estudiantil</p>
+        <p><strong>Ubicación:</strong> Puebla</p>
+        <p><strong>Pago:</strong> No</p>
+        <p><strong>Fecha límite:</strong> 10 mayo 2025</p>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="casting-card">
+        <h4>Comercial para TV</h4>
+        <p><strong>Tipo:</strong> Comercial</p>
+        <p><strong>Ubicación:</strong> CDMX</p>
+        <p><strong>Pago:</strong> Sí</p>
+        <p><strong>Fecha límite:</strong> 12 mayo 2025</p>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Talentum. Todos los derechos reservados.</p>
+    <p>
+      <a href="#">Términos</a> | <a href="#">Privacidad</a> | <a href="#">Contacto</a>
+    </p>
+  </footer>
+</body>
+</html>
